@@ -1,0 +1,78 @@
+.banner
+  display: flex
+  min-height: 1124px
+  width: 100%
+  background:
+    color: transparent
+    image: url("../images/content/banner_bg.png")
+    size: 1680px
+    repeat: no-repeat
+    position: center top
+
+  +large-down
+    background-size: 1095px
+    min-height: 780px
+    background-position: center 54px
+    //min-height: 784px
+
+  +laptop-down
+    background-image: url("../images/content/banner_mob_bg.png")
+    background-size: contain
+    min-height: calc(100vh - #{$header_mob_h})
+    //background-position: center calc(50% + 54px)
+    background-position: center 50%
+
+
+  .container
+    padding-top: 60px
+    margin-top: -120px
+    //background-color: rgba(0,0,0,0.5)
+    +large-down
+      padding-top: 248px
+    +laptop-down
+      padding: 0
+      margin-top: 0px
+
+    +laptop-down
+      margin-top: 0px
+
+
+.main-title
+  font-family: $font_KZExo2_Thin
+  font-size: $fontSize_main_title
+  font-weight: 300
+  color: $col_main_title
+  text-align: center
+  text-transform: uppercase
+  margin: 0px 0px 30px 0px
+  +laptop-down
+    font-size: 30px
+    line-height: 30px
+    margin-bottom: 3px
+
+
+.main-subtitle
+  font-family: $font_KZCenturyGothic
+  font-size: $fontSize_main_subtitle
+  color: $col_main_subtitle
+  text-align: center
+  text-transform: lowercase
+  margin: 0px 0px 35px 0px
+
+  +large-down
+    margin-bottom: 37px
+  +laptop-down
+    font-size: 12px
+    line-height: 15px
+    margin-bottom: 10px
+
+.slogan
+  font-family: $font_KZAriston
+  font-size: $fontSize_slogan
+  color: $col_slogan
+  text-align: center
+  text-transform: lowercase
+  margin: 0px
+  +laptop-down
+    font-size: 18px
+    line-height: 19px
